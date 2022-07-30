@@ -8,8 +8,8 @@
     <label for="name">Enter your name</label>
     <input id="name" type="text" v-model="yourName">
     <p>Hello {{yourName}}</p>
-    <button @click="thanks"> Click if you like cats</button>
-    <p>{{res}}</p>
+    <button @click="like"> Click if you like cats</button>
+    
     </div>
 </template>
 
@@ -28,8 +28,8 @@ export default {
         sayHello() {
             console.log("Hello");
         },
-        thanks() {
-            res: "Thank you!" //no funciona así?
+        like() {
+            this.imageSrc = "https://c.tenor.com/K_FndTKVFTAAAAAi/peachcat-cat.gif"
         }
     }
 
